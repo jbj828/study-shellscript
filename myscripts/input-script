@@ -1,0 +1,17 @@
+#!/bin/bash
+
+a=`hostname`
+echo Hello, my server name is $a
+echo
+echo What is your name?
+read b
+echo
+echo Hello $b
+echo
+
+echo what is your profession?
+read c
+echo
+echo What is your favorite show?
+read d
+echo Wow your job $c is fantastic! I also like $d
