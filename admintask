@@ -1,0 +1,20 @@
+#!/bin/bash
+# Author: Chung
+# Date Created: 05/26/2021
+# Description: This script will run basic admin commands
+# Date Modified: 05/26/2021
+
+echo
+echo This script will run basic administrative commands
+echo
+top | head -10
+echo
+df -h
+echo
+free -m
+echo
+uptime
+echo
+iostat
+echo
+echo End of script
