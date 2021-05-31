@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$a" = Monday ] || ["$a" = Tuesday ]
+
+if [ -e /export/home/filename ]
+
+if [ "$a" != "" ]
+
+if [ error_code != "0" ]
+
+if [ $? -eq 0 ]
+
+
