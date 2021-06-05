@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ls -l /home/rene
+
+if [ $? -eq 0 ]
+then
+echo File exist!
+else
+echo File is not exist!
+fi
