@@ -1,0 +1,10 @@
+#!/bin/bash
+# Author: Chung ByungJae
+# Date: 08/08/2020
+# Description: Format the output of admin commands
+# Modified: 08/08/2020
+
+date
+uptime
+df -h
+
