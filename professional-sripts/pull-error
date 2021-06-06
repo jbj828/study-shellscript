@@ -1,7 +1,0 @@
-#!/bin/bash
-# Author: Chung Byungjae
-# Date: 08/08/2020
-# Description: This script will pull only Error messages from /var/log/syslog
-# Modified: 08/08/2020
-
-grep -i error /home/chung/study-shellscript/professional-sripts/syslog > /home/chung/study-shellscript/professional-sripts/output-error
