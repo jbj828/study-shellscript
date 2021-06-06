@@ -1,0 +1,7 @@
+#!/bin/bash
+# Author: Chung
+# Date: 06/06/2021
+# Description: This script will delete files older than 90 days
+# Modified: 06/06/2021
+
+find /home/chung/study-shellscript/ps -mtime +90 -exec rm {} \;

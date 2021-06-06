@@ -1,0 +1,21 @@
+#!/bin/bash
+# Author: Chung
+# Date: 06/06/2021
+# Description: Backup all files in study-shellscript folder
+# Modified: 06/06/2021
+
+tar cvf /tmp/backup.tar *
+
+gzip /tmp/backup.tar
+
+find /tmp/backup.tar.gz -mtime -1 -type f -print &> /dev/null
+
+if [ $? -eq 0 ]
+	then
+	echo Backup was created
+	echo
+	echo Archiving Backup
+	#scp /tmp/backup.tar.gz root@192.168.1.x:/path
+	else
+	echo Backup failed
+fi
