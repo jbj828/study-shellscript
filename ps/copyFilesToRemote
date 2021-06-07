@@ -1,0 +1,12 @@
+#!/bin/bash
+# Author: Chung
+# Date: 06/07/2021
+# Description: This script will copy files to remote hosts
+# Modification: 06/07/2021
+
+a=`cat /home/chung/abc`
+for i in $a
+do
+	scp somefile $i:/tmp
+done
+
