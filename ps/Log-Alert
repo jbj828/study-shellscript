@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Description: This script will send an email to administrator
+
+IT="chung@gmail.com,jbj828@gmail.com"
+
+if [ -s /tmp/filtered-messages ]
+	then
+	cat /tmp/filtered-messages | sort | uniq | mail -s "syslog messages" $IT
+	rm /tmp/filtered-messages
+else
+fi
