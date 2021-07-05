@@ -1,0 +1,20 @@
+#!/bin/bash
+# Author: Chung ByungJae
+# Date: 06/05/2021
+# Description: This script will ping a multiple remote host and notify
+# Modified: 06/05/2021
+
+hosts="/home/chung/study-shellscript/ps/myhosts"
+
+for ip in $(cat $hosts)
+do
+	ping -c1 $ip &> /dev/null
+	if [ $? -eq 0 ]
+	then
+	echo
+	echo $ip OK
+	else
+	echo
+	echo $ip NOT OKAY
+	fi
+done
